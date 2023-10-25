@@ -11,3 +11,5 @@ function displayUserId(userId) {
 }
 let user1 = displayUserId(userId);
 console.log(user1);
+let myArray = [1, "Ameya"];
+let myArray1 = [1, "Ameya", 2, "Belvalkar"];

@@ -1,4 +1,11 @@
-let user: [number, string] = [1, "Ameya"];
+/* Syntax :- let variable:[typeOfVariable1,typeOfVariable2]=[Variable1,Variable2 ]
+             A tuple in TypeScript is an array with a fixed number of elements 
+            whose types are known, but need not be the same
+*/
 
-console.log(user[0].valueOf);
-console.log(user[1].length);
+let skill: [string, number] = ["Programming", 400];
+
+//! RGBA Color
+
+let redColor: [number, number, number, number?] = [255, 0, 0];
+let redColorWithOpacity: [number, number, number, number?] = [255, 0, 0, 0.5];
