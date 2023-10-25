@@ -1,4 +1,4 @@
 "use strict";
-let user = [1, "Ameya"];
-console.log(user[0].valueOf);
-console.log(user[1].length);
+let skill = ["Programming", 400];
+let redColor = [255, 0, 0];
+let redColorWithOpacity = [255, 0, 0, 0.5];
