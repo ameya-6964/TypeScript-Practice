@@ -10,6 +10,11 @@ calculateTax(10_2000);
 
  */
 
+/* 
+ Syntax :- function nameOfFunction(parameter1:type) :returnType{
+  functionBody
+ }
+*/
 function greet(name: string): string {
   return `Hello ${name}, Nice To See You`;
 }
