@@ -1,9 +1,13 @@
 "use strict";
-function kgToLbs(weight) {
-    if (typeof weight === "number") {
-        return weight * 2.2;
+let userId;
+userId = 1;
+userId = "dsfsdfsfsfrwerwerew432";
+function displayUserId(userId) {
+    console.log(`UserId Is ${userId}`);
+    if (typeof userId === "string") {
+        return userId.toUpperCase();
     }
-    else {
-        return parseInt(weight) * 2.2;
-    }
+    return userId;
 }
+let user1 = displayUserId(userId);
+console.log(user1);
