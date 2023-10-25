@@ -1,8 +1,12 @@
 "use strict";
-let employee = {
-    id: 1,
+let student = {
     name: "Ameya",
-    retire: (date) => {
-        console.log(date);
-    },
+    address: "Airoli",
+    phoneNumber: 45446645,
+    isActive: true,
 };
+console.log(student);
+console.log(student.name);
+console.log(student.address);
+console.log(student.phoneNumber);
+console.log(student.isActive);
