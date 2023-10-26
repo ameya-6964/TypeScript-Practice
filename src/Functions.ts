@@ -35,3 +35,33 @@ let driver1 = isEligble("Ameya", 18);
 console.log(driver1);
 let driver2 = isEligble("Jayesh", 16);
 console.log(driver2);
+
+//!Function Types
+/* let x: (a: number, b: number) => number */
+let x = function myFunType(a: number, b: number): number {
+  return a + b;
+};
+
+let person: {
+  firstName: string;
+  lastName: string;
+  DOB: number;
+  getFullName: () => string;
+  getAge: (a: number) => number;
+};
+
+person = {
+  firstName: "Ameya",
+  lastName: "Belvalkar",
+  DOB: 1997,
+  getFullName: function () {
+    return `My Name Is ${this.firstName} ${this.lastName}`;
+  },
+  getAge: function (DOB) {
+    let currentYear = 2023;
+    return currentYear - DOB;
+  },
+};
+
+console.log(person.getFullName());
+console.log(person.getAge(1997));
