@@ -1,13 +1,24 @@
-type Employee = {
-  readonly id: number;
-  name: string;
-  retire: (date: Date) => void;
+type xyz = string;
+
+let addres: xyz = "mumbai";
+
+type alphaNumeric = string | number;
+
+let pass: alphaNumeric = 1212;
+console.log(typeof pass);
+pass = "ABC";
+console.log(typeof pass);
+
+type Order = {
+  title: string;
+  price: number;
+  status: string;
+  date: number;
 };
 
-let employee1: Employee = {
-  id: 1,
-  name: "Ameya",
-  retire: (date: Date) => {
-    console.log(date);
-  },
+let order1: Order = {
+  title: "One Plus",
+  price: 40000,
+  status: "Pending",
+  date: 121212,
 };
