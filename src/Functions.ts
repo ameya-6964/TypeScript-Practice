@@ -64,4 +64,4 @@ person = {
 };
 
 console.log(person.getFullName());
-console.log(person.getAge(1997));
+console.log(person.getAge(1995));

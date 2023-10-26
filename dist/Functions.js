@@ -27,10 +27,9 @@ person = {
         return `My Name Is ${this.firstName} ${this.lastName}`;
     },
     getAge: function (DOB) {
-        let dob = DOB;
         let currentYear = 2023;
-        return currentYear - dob;
+        return currentYear - DOB;
     },
 };
 console.log(person.getFullName());
-console.log(person.getAge(1997));
+console.log(person.getAge(1995));
