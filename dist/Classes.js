@@ -1,6 +1,6 @@
 "use strict";
 class Car {
-    constructor(modelName, color) {
+    constructor(modelName, color = "Default Color") {
         this.model = modelName;
         this.color = color;
     }
@@ -19,5 +19,6 @@ car1.getModelNumber();
 let car2 = new Car("Maruti Dzire", "Red");
 car2.getColor();
 car2.getModelNumber();
-console.log(car1);
-console.log(car2);
+let car3 = new Car("Hyundai Aura");
+car3.getColor();
+car3.getModelNumber();

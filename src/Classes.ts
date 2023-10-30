@@ -6,8 +6,9 @@ class Car {
   //! Properties - Data -- Variables
   model: string;
   color: string;
-  //! Constructor -- Helps in Initialisatopn of Objesct
-  constructor(modelName: string, color: string) {
+  //! Constructor -- Helps in Initialisation of Objects
+  //? We Cannot Do Constructor Overloading In JavaScript
+  constructor(modelName: string, color: string = "Default Color") {
     this.model = modelName;
     this.color = color;
   }
@@ -31,3 +32,7 @@ car1.getModelNumber();
 let car2: Car = new Car("Maruti Dzire", "Red");
 car2.getColor();
 car2.getModelNumber();
+
+let car3: Car = new Car("Hyundai Aura");
+car3.getColor();
+car3.getModelNumber();
