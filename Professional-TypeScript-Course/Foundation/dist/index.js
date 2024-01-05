@@ -2,9 +2,13 @@
 const num1 = document.getElementById("num1");
 const num2 = document.getElementById("num2");
 const button = document.getElementById("btn");
+const result = document.getElementById("result");
 function add(num1, num2) {
     return num1 + num2;
 }
 button.addEventListener("click", () => {
-    console.log(add(Number(num1.value), Number(num2.value)));
+    const value = ` Addition Of ${num1.value} and ${num2.value} Is ${add(Number(num1.value), Number(num2.value))}`;
+    num1.value = "";
+    num2.value = "";
+    result.textContent = String(value);
 });
