@@ -24,5 +24,11 @@ let k: null = null;
 let l: number = 5;
 let u: undefined;
 
-console.log(u + l); // NaN -> Not a number -> undefined + 5 -> Nan
-console.log(k + 5); // 5 -> as k is null and any primitive operation On It Will Be Treated As 0
+//* any Type -> Anti-Pattern -> Never Use Any As It Defeates Purpose Of TypeScript
+
+let random: any = 5;
+console.log(random); //5
+random = "Hello World";
+console.log(random); // Hello World
+random = true;
+console.log(random); // true
