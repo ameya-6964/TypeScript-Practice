@@ -16,3 +16,4 @@ let f: string = "Hello World";
 
 //* Boolean DataType
 let g: boolean = true;
+let i: boolean = false;
